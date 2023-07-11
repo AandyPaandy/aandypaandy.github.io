@@ -35,7 +35,7 @@ function displayQuote(data) {
 
 
 
-
+/*
 const quotes = [
     "When there's litte you can do, do what little you can",
     "I never walked into anything and found I was simply good at it. The only way I shone at anything in my life was being too much of a stubborn bastard to quit.",
@@ -62,3 +62,5 @@ await fetch('localhost:3000/quote')
     .then(data => {
         console.log(data);
     })
+
+*/
