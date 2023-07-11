@@ -1,5 +1,3 @@
-const { response } = require("express");
-
 document.addEventListener("DOMContentLoaded", fetchData);
 
 function fetchData() {
@@ -29,6 +27,9 @@ function displayQuote(data) {
             <li>Character: ${item.character}</li>
             <li>Author: ${item.author}</li>
         </ul>`
+
+        quoteContainer.appendChild(quoteElement);
+        bookInfoContainer.appendChild(bookElement);
     })
 }
 

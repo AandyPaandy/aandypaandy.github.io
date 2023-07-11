@@ -4,6 +4,17 @@ const Quote = require('./models/quoteModel.js');
 const quote = require('./models/quoteModel.js');
 const app = express()
 
+var cors = require('cors')
+app.use(cors())
+
+app.get('/quote/:id', function (req, res, next) {
+    res.json({msg: 'This is CORS-enabled for all origins!'})
+})
+
+app.listen(80, function () {
+    console.log('CORS-enabled web server listening to port 80')
+})
+
 // specify json middleware, app.use is used for middlewares
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
