@@ -3,7 +3,7 @@ const mongoose = require('mongoose'); // anything that interacts with database
 
 const quoteSchema = mongoose.Schema(
     {
-        book: {
+        title: {
             type: String,
             required: [true, "Please enter the book name"]
         },

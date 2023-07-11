@@ -20,7 +20,7 @@ function displayQuote(data) {
         const quoteElement = document.createElement('div');
         const bookElement = document.createElement('div');
 
-        quoteElement.innerHTML = `<q> ${item.quote} </p>`
+        quoteElement.innerHTML = `<q><em> ${item.quote} </em></p>`
         
         bookElement.innerHTML = `
         <ul>
