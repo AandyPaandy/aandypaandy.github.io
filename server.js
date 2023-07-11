@@ -1,6 +1,5 @@
 const express = require('express'); // require the package, within node_modules
 const mongoose = require('mongoose')
-const Quote = require('./models/quoteModel.js');
 const quote = require('./models/quoteModel.js');
 const app = express()
 
