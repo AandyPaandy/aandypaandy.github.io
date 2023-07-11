@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", fetchData);
 
 function fetchData() {
-    fetch('http://localhost:300/book')
+    fetch('http://localhost:3000/book')
         .then(response => response.json())
         .then(data => displayQuote(data))
         .catch(error => console.error('Error fetching data:', error))
